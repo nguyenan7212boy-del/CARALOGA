@@ -15,109 +15,68 @@ box-sizing:border-box;
 }
 
 body{
-background:white;
-font-family:Arial, Helvetica, sans-serif;
+background:#fff;
+font-family:"Times New Roman", serif;
 }
 
 .logo{
 position:fixed;
-top:30px;
+top:35px;
 left:50%;
 transform:translateX(-50%);
-font-size:28px;
-letter-spacing:12px;
-font-weight:300;
+font-size:30px;
+letter-spacing:15px;
+font-weight:400;
 z-index:100;
+color:white;
+mix-blend-mode:difference;
 }
 
 .card{
-
 height:100vh;
-
 position:relative;
-
 overflow:hidden;
-
 }
 
 .card img{
-
 width:100%;
-
 height:100%;
-
 object-fit:cover;
-
-transition:.5s;
-
-}
-
-.overlay{
-
-position:absolute;
-
-top:0;
-
-left:0;
-
-width:100%;
-
-height:100%;
-
-background:rgba(0,0,0,.25);
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-opacity:0;
-
-transition:.5s;
-
+transition:1s;
 }
 
 .card:hover img{
-
-transform:scale(1.05);
-
+transform:scale(1.08);
 }
 
-.card:hover .overlay{
-
-opacity:1;
-
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.18);
+display:flex;
+justify-content:center;
+align-items:center;
 }
 
 .overlay a{
-
 color:white;
-
 text-decoration:none;
-
-font-size:28px;
-
-letter-spacing:8px;
-
+font-size:20px;
+letter-spacing:10px;
 border:1px solid white;
-
-padding:15px 45px;
-
-transition:.4s;
-
+padding:18px 55px;
+transition:.5s;
 }
 
 .overlay a:hover{
-
 background:white;
-
 color:black;
-
 }
 
 </style>
-
 </head>
 
 <body>
